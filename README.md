@@ -1,5 +1,10 @@
 # Lab-Web-03-2026
 
+# **Aturan Asistensi**
+1. **Jadwal Asistensi**: Konfirmasi asistensi maksimal H-1 lewat grup chat, ya.
+2. **Lokasi Asistensi**: Di tentukan oleh Asisten
+3. **Pengumpulan Tugas**: Jangan lupa langsung push hasil asistensi ke GitHub. Langkah ini wajib karena masuk dalam poin penilaian.
+---
 # Repositori Tugas Pemrograman Web 2026
 
 ## Requirements:
@@ -14,7 +19,7 @@
 
    ```sh
 
-   git clone https://github.com/Ervin1809/LAB-WEB-03-2026.git
+   git clone https://github.com/USERNAME_ANDA/LAB-WEB-03-2026.git
 
    ```
 
@@ -25,8 +30,8 @@
    cd LAB-WEB-03-2026
    git branch NIM_ANDA
    git checkout NIM_ANDA
-   git config user.name USERNAME_GITHUB
-   git config user.email EMAIL_GITHUB
+   git config user.name "USERNAME_GITHUB"
+   git config user.email "EMAIL_GITHUB"
 
    ```
 
@@ -39,19 +44,19 @@
    ```
 
 
-5. Didalam folder tersebut, buat sebuah folder dengan nama **Praktikum-n**, **n** = praktikum keberapa
+5. Didalam folder tersebut, buat sebuah folder dengan nama **Tugas_Praktikum_n**, **n** = praktikum keberapa
    ```sh
 
-   mkdir "Tugas Praktikum n"
-   cd "Tugas Praktikum n"
+   mkdir "Tugas_Praktikum_n"
+   cd "Tugas_Praktikum_n"
 
    CATATAN: n DI SINI ADALAH NOMOR PRAKTIKUM KE BERAPA
-   CONTOH: Tugas Praktikum 1
+   CONTOH: Tugas_Praktikum_1
 
    ```
 
-7. Semua _file_ untuk tugas praktikum ke-**n**, disimpan kedalam folder **Tugas Praktikum n**
-8. Setiap membuat _file_ atau melakukan perubahan, lakukan proses **commit** dengan pesan yang deskriptif
+6. Semua _file_ untuk tugas praktikum ke-**n**, disimpan kedalam folder **Tugas_Praktikum_n**
+7. Setiap membuat _file_ atau melakukan perubahan, lakukan proses **commit** dengan pesan yang deskriptif
 
    ```sh
 
@@ -91,7 +96,7 @@
    #3. Scroll ke bagian bawah dan pilih menu Developer settings
    #4. Pilih Personal access tokens
    #5. Pilih Generate new tokens
-   #6. Tuliskan note untuk token anda (ex: Token for Lab-Mobile-2024)
+   #6. Tuliskan note untuk token anda (ex: Token for Lab-Web-2026)
    #7. Atur waktu expiration token anda (sesuai keinginan anda)
    #8. Pada select scope, ceklis box repo
    #9. Klik generate new token
