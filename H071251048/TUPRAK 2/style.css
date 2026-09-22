@@ -1,0 +1,184 @@
+/* ELEMENT SELECTOR */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eef5ef;
+    color: #333;
+}
+
+h2 {
+    color: #2d6a4f;
+}
+
+
+/* ID SELECTOR */
+
+#home {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* NAVIGASI */
+
+nav {
+    background-color: #1b4332;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* PSEUDO CLASS */
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/* CLASS SELECTOR */
+
+.bagian {
+    background-color: white;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    max-width: 900px;
+}
+
+
+/* FLEXBOX */
+
+.aktivitas-container {
+    display: flex;
+    gap: 20px;
+}
+
+.kartu {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f5faf6;
+}
+
+
+/* GALERI */
+
+.galeri-container {
+    display: flex;
+    gap: 20px;
+}
+
+.foto {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.foto img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* TABEL */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+
+/* FORM */
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+
+/* HOVER PADA TOMBOL */
+
+input[type="submit"]:hover {
+    background-color: #1b4332;
+}
+
+
+/* VIDEO */
+
+iframe {
+    max-width: 100%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .aktivitas-container {
+        flex-direction: column;
+    }
+
+    .galeri-container {
+        flex-direction: column;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav a {
+        display: block;
+    }
+}
