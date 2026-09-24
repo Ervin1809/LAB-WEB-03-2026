@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- 1. Element Selector -------------------- */
+body {
+  font-family: Arial, sans-serif;
+  color: #2b2b2b;
+  background-color: #f5f2ea;
+}
+
+/* -------------------- Group Selector (2.4 poin 4) -------------------- */
+h1, h2, h3 {
+  color: #1f4d28;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 14px 0 6px;
+  color: #8a5a34;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul, ol {
+  margin: 0 0 14px 20px;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  border: 1px solid #cfc6b3;
+  margin: 24px 0;
+}
+
+/* -------------------- 2. Header (Box Model + Flexbox) -------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2f6b3a;
+  border-bottom: 4px solid #ef8a3d;
+}
+
+header h1 {
+  color: white;
+  font-size: 32px;
+}
+
+header p {
+  color: white;
+  margin-top: 6px;
+}
+
+/* -------------------- 3. Navigasi (Flexbox + Position: sticky + z-index) -------------------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  background-color: #1f4d28;
+  padding: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: 0.3s;
+}
+
+/* Pseudo-class :hover */
+nav a:hover {
+  background-color: #ef8a3d;
+  color: black;
+}
+
+/* -------------------- 4. Main & Section (Box Model) -------------------- */
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+/* -------------------- 5. ID Selector -------------------- */
+#tentang p:first-child::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2f6b3a;
+}
+
+#lokasi iframe {
+  width: 100%;
+  height: 315px;
+  border: 3px solid #2f6b3a;
+}
+#multimedia video {
+  display: block;
+  margin-top: 10px auto 0;
+  border: 3px solid #8a5a34;
+}
+
+#formulir {
+  background-color: #fbf7ef;
+}
+
+/* Galeri Foto menggunakan CSS Grid */
+#galeri {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+#galeri h2 {
+  grid-column: 1 / -1;
+}
+
+#camping-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------- 6. Class Selector -------------------- */
+.gallery-item {
+  border: 1px solid #cfc6b3;
+  padding: 10px;
+  background-color: #f5f2ea;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  background-color: #e4ddc8;
+  border: 1px solid #2f6b3a;
+}
+
+.gallery-item figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+/* -------------------- 7. Tabel Informasi -------------------- */
+#info-pendakian table {
+  width: 100%;
+  border: 1px solid #cfc6b3;
+  margin-top: 10px;
+}
+
+#info-pendakian th,
+#info-pendakian td {
+  border: 1px solid #cfc6b3;
+  padding: 10px;
+  text-align: left;
+}
+
+#info-pendakian thead th {
+  background-color: #2f6b3a;
+  color: white;
+}
+
+
+#info-pendakian tbody tr:first-child {
+  font-weight: bold;
+}
+
+
+#info-pendakian tbody tr:hover {
+  background-color: #e9f2e6;
+}
+
+#info-pendakian tfoot td {
+  font-style: italic;
+  color: #6b6b6b;
+}
+
+/* -------------------- 8. Formulir (Box Model) -------------------- */
+#formulir fieldset {
+  border: 2px solid #2f6b3a;
+  padding: 20px;
+}
+
+#formulir legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: #1f4d28;
+}
+
+#formulir label:not(.radio-label):not(.checkbox-label) {
+  display: inline-block;
+  min-width: 170px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#formulir input,
+#formulir select,
+#formulir textarea {
+  padding: 8px;
+  border: 1px solid #cfc6b3;
+  font-family: inherit;
+  width: 100%;
+  max-width: 320px;
+  transition: 0.3s;
+}
+
+#formulir input[type="radio"],
+#formulir input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* -------------------- 9. Class Selector: tombol -------------------- */
+.btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 24px;
+  background-color: #ef8a3d;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  background-color: #2f6b3a;
+  color: white;
+}
+
+/* Pseudo-class :active */
+.btn:active {
+  background-color: #1f4d28;
+}
+
+/* -------------------- 10. Footer -------------------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #1f4d28;
+  color: white;
+}
+
+/* =========================================================
+   11. RESPONSIVE DESIGN (Media Query - 2.10)
+========================================================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #galeri {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #formulir label {
+    display: block;
+    min-width: 0;
+  }
+
+  #formulir input,
+  #formulir select,
+  #formulir textarea {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #galeri {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #lokasi iframe {
+    height: 220px;
+  }
+}
