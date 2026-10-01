@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sewa alat camping dan pendakian di Gowa, Sulawesi Selatan. Tenda, carrier, sleeping bag, dan perlengkapan lain yang bersih dan terawat.">
+    <title>DannAnventure - Sewa Alat Camping & Pendakian Gowa</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="text-stone-100 font-sans antialiased bg-fixed bg-cover bg-center bg-[linear-gradient(rgba(4,28,20,0.85),rgba(4,28,20,0.85)),url('https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=2000&q=80')]">
+    <!-- 1. NAVBAR  -->
+    <nav class="sticky top-0 z-50 bg-black/30 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col items-center gap-2 md:flex-row md:justify-between">
+            <a href="#beranda" class="text-xl font-extrabold text-white tracking-wide"> Dann<span class="text-amber-400">Adventure</span></a>
+            <ul class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-emerald-100">
+                <li><a href="#beranda" class="hover:text-amber-400 transition-colors">Beranda</a></li>
+                <li><a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang</a></li>
+                <li><a href="#layanan" class="hover:text-amber-400 transition-colors">Layanan</a></li>
+                <li><a href="#katalog" class="hover:text-amber-400 transition-colors">Katalog</a></li>
+                <li><a href="#testimoni" class="hover:text-amber-400 transition-colors">Testimoni</a></li>
+                <li><a href="#kontak" class="hover:text-amber-400 transition-colors">Kontak</a></li>
+            </ul>
+            <a href="#kontak" class="hidden md:block bg-amber-400 text-emerald-950 font-bold text-sm px-5 py-2 rounded-full hover:bg-amber-300 active:scale-95 transition-all">Sewa Sekarang</a>
+        </div>
+    </nav>
+
+    <!-- 2. HEADER  -->
+    <header class="pt-6 pb-12 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight drop-shadow-lg">Dann Adventure</h1>
+            <p class="mt-2 text-base sm:text-lg text-amber-300 font-semibold drop-shadow">Sewa alat camping &amp; pendakian.</p>
+        </div>
+    </header>
+
+<!-- 3. HERO SECTION -->
+    <section id="beranda" class="scroll-mt-24 py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-black/40 backdrop-blur-sm text-emerald-200 text-xs sm:text-sm px-4 py-1.5 rounded-full font-medium">📍 Kab. Gowa, Sulawesi Selatan</span>
+                <h2 class="mt-5 text-4xl sm:text-5xl font-black leading-tight text-white drop-shadow">Solusi Praktis Kebutuhan Outdoor Kamu.</h2>
+                <p class="mt-4 text-lg text-emerald-100/90 leading-relaxed max-w-xl">Tenda, carrier, sleeping bag, kompor, sampai headlamp. Semua bersih, dicek sebelum keluar, dan siap disewa harian sesuai jadwal pendakianmu.</p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a href="#kontak" class="text-center bg-amber-400 text-emerald-950 font-bold px-8 py-3.5 rounded-xl hover:bg-amber-300 active:scale-95 transition-all">Sewa Sekarang</a>
+                    <a href="#katalog" class="text-center bg-black/40 backdrop-blur-sm text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-black/60 active:scale-95 transition-all">Lihat Katalog Alat</a>
+                </div>
+            </div>
+
+            <div class="bg-black/40 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full">Destinasi Populer</span>
+                        <span class="text-xs text-emerald-200/70">Sulawesi Selatan</span>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2">
+                         Rute yang Sering Kami Layani
+                    </h3>
+                    <p class="mt-2 text-sm sm:text-base text-emerald-100/90 leading-relaxed">
+                        Perlengkapan kami terbukti andal menembus trek dingin dan berangin di jalur Bawakaraeng, Lompobattang, Bulu Baria, hingga area camping Malino.
+                    </p>
+                </div>
+
+                <div class="mt-6 grid grid-cols-3 gap-3">
+                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/5] bg-white/5 border border-white/10">
+                        <img src="https://i.pinimg.com/736x/98/76/08/9876087d7737532720a4e4dfdc7fde40.jpg" 
+                             alt="Gunung Bawakaraeng" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-3">
+                            <p class="text-xs sm:text-sm font-bold text-white leading-tight">Bawakaraeng</p>
+                            <p class="text-[10px] sm:text-xs text-amber-400 font-medium">2.830 mdpl</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/5] bg-white/5 border border-white/10">
+                        <img src="https://i.pinimg.com/736x/17/ad/06/17ad06278d4f8517a039e60bd654b548.jpg" 
+                             alt="Gunung Lompobattang" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-3">
+                            <p class="text-xs sm:text-sm font-bold text-white leading-tight">Lompobattang</p>
+                            <p class="text-[10px] sm:text-xs text-amber-400 font-medium">2.874 mdpl</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/5] bg-white/5 border border-white/10">
+                        <img src="https://i.pinimg.com/736x/b8/22/37/b822376a7a0e8c8d5be20aac3cf73f3f.jpg" 
+                             alt="Bulu Baria" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-3">
+                            <p class="text-xs sm:text-sm font-bold text-white leading-tight">Bulu Baria</p>
+                            <p class="text-[10px] sm:text-xs text-amber-400 font-medium">2730 mdpl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TENTANG -->
+    <section id="tentang" class="max-w-6xl mx-auto px-4 py-20 scroll-mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-amber-400 font-bold tracking-wider text-xs uppercase">Cerita Kami</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Berawal dari hobi, menjadi solusi</h2>
+                <p class="mt-5 leading-relaxed text-emerald-100/90">Kecintaan saya pada dunia mendaki gunung membuat saya rela menyisihkan uang demi mengoleksi perlengkapan outdoor berkualitas. Sadar banyak teman pemula yang ingin mendaki namun terbentur mahalnya harga alat, ia tergerak untuk membantu.</p>
+                <p class="mt-4 leading-relaxed text-emerald-100/90">Kami percaya menikmati keindahan gunung tidak harus membebani kantong. Pemula cukup datang dengan niat dan fisik prima, perlengkapannya biar kami sediakan.</p>
+            </div>
+            
+            <div class="bg-black/35 backdrop-blur-md rounded-2xl p-7 space-y-5">
+                <h3 class="text-xl font-bold text-amber-300 pb-2">Tahapan Sewa Simpel</h3>
+                <div class="flex gap-4 items-start">
+                    <span class="shrink-0 w-9 h-9 rounded-xl bg-amber-400 text-emerald-950 font-bold flex items-center justify-center">1</span>
+                    <p class="text-emerald-100"><span class="font-bold text-white">Pilih alat &amp; tanggal:</span> Isi formulir pemesanan atau chat WhatsApp admin kami.</p>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="shrink-0 w-9 h-9 rounded-xl bg-amber-400 text-emerald-950 font-bold flex items-center justify-center">2</span>
+                    <p class="text-emerald-100"><span class="font-bold text-white">Ambil di toko / basecamp:</span> Cek fisik perlengkapan bersama, jaminan berupa KTP aktif.</p>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="shrink-0 w-9 h-9 rounded-xl bg-amber-400 text-emerald-950 font-bold flex items-center justify-center">3</span>
+                    <p class="text-emerald-100"><span class="font-bold text-white">Pakai &amp; kembalikan:</span> Cukup bersihkan kotoran kasar, pencucian higienis kami yang urus.</p>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <span class="shrink-0 w-9 h-9 rounded-xl bg-amber-400 text-emerald-950 font-bold flex items-center justify-center">4</span>
+                    <p class="text-emerald-100"><span class="font-bold text-white">Keterlambatan Pengembalian:</span> Toleransi keterlambatan pengembalian di kami sampai jam 8 pagi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. LAYANAN / FITUR -->
+    <section id="layanan" class="max-w-4xl mx-auto px-4 py-20 scroll-mt-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white text-center">Kenapa Memilih Dann Adventure?</h2>
+        <p class="mt-3 text-center text-emerald-200/80 max-w-xl mx-auto text-sm sm:text-base">Kami mengutamakan keselamatan dan kenyamanan setiap jengkal langkah petualanganmu.</p>
+        
+        <div class="mt-10 bg-black/35 backdrop-blur-md rounded-2xl p-7 space-y-5 border border-white/5">
+            <div class="flex gap-4 items-start">
+                <span class="shrink-0 w-3.5 h-3.5 mt-1.5 rounded-full bg-amber-400"></span>
+                <p class="text-emerald-100 leading-relaxed"><span class="font-bold text-white">Bersih &amp; Wangi:</span> Alat dicuci bersih, dijemur kering, dan dites fungsinya sebelum diserahterimakan.</p>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <span class="shrink-0 w-3.5 h-3.5 mt-1.5 rounded-full bg-amber-400"></span>
+                <p class="text-emerald-100 leading-relaxed"><span class="font-bold text-white">Harga Terjangkau:</span> Tarif harian hemat dan transparan, plus diskon khusus untuk penyewaan 3 hari ke atas.</p>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <span class="shrink-0 w-3.5 h-3.5 mt-1.5 rounded-full bg-amber-400"></span>
+                <p class="text-emerald-100 leading-relaxed"><span class="font-bold text-white">Konsultasi Jalur:</span> Bingung gear apa saja untuk Bawakaraeng? Silakan tanya, kami siap bantu hitung kebutuhan.</p>
+            </div>
+
+            <div class="flex gap-4 items-start">
+                <span class="shrink-0 w-3.5 h-3.5 mt-1.5 rounded-full bg-amber-400"></span>
+                <p class="text-emerald-100 leading-relaxed"><span class="font-bold text-white">Antar Basecamp:</span> Untuk rombongan atau komunitas, kami sediakan opsi drop alat langsung ke meeting point.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KATALOG -->
+    <section id="katalog" class="max-w-6xl mx-auto px-4 py-20 scroll-mt-16">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Katalog Alat Sewa</h2>
+            <p class="mt-3 text-emerald-200/80">Pilih satuan atau ambil paket hemat agar persiapan mendakimu lebih ringkas.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+<div class="col-span-2 md:col-span-2 bg-black/45 backdrop-blur-md rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-white/5">
+    <div>       
+        <img src="https://i.pinimg.com/736x/73/f4/97/73f497b9695e23edb336e272a869e65c.jpg" 
+             alt="Paket Alat Tektok" 
+             class="w-full h-60 sm:h-64 object-cover rounded-2xl shadow-md">
+             
+        <h3 class="mt-5 text-2xl sm:text-3xl font-extrabold text-white">Paket Hemat Tektok</h3>
+        <p class="mt-2 text-emerald-100 text-sm sm:text-base leading-relaxed">Solusi Hemat Tektok : Hydropack + Sepatu + Traking poll + Topi.</p>
+    </div>
+    <div class="pt-6 border-t border-white/10 mt-4">
+        <p class="text-xs text-amber-300 font-semibold uppercase">Mulai Dari</p>
+        <p class="text-amber-400 font-black text-3xl">Rp50.000 <span class="text-sm font-normal text-white">/ hari</span></p>
+    </div>
+
+</div>
+<div class="col-span-2 md:col-span-2 bg-black/45 backdrop-blur-md rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-white/5">
+    <div>
+        <img src="https://i.pinimg.com/736x/93/36/fe/9336fe57b485a6582944fd19f5310835.jpg" 
+             alt="Paket Alat Tektok" 
+             class="w-full h-60 sm:h-64 object-cover rounded-2xl shadow-md">
+             
+        <h3 class="mt-5 text-2xl sm:text-3xl font-extrabold text-white">Paket Hemat Camping</h3>
+        <p class="mt-2 text-emerald-100 text-sm sm:text-base leading-relaxed">Solusi Hemat Camping : Carrier + Tenda + Kursi & Meja Lipat + Kompor + Nesting + 2 Matras + Lampu Tenda.</p>
+    </div>
+    <div class="pt-6 border-t border-white/10 mt-4">
+        <p class="text-xs text-amber-300 font-semibold uppercase">Mulai Dari</p>
+        <p class="text-amber-400 font-black text-3xl">Rp110.000 <span class="text-sm font-normal text-white">/ hari</span></p>
+    </div>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/f1/da/a3/f1daa3a7895ae3cb77635c2d61902525.jpg" 
+             alt="Tenda" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Tenda</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp30.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/6c/46/e9/6c46e92e3bf2a7d9ba38f81da394d84f.jpg" 
+             alt="Carrier 60L" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Carrier 60L</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp25.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/e4/68/c4/e468c41f573bd9037c83e77b95e66351.jpg" 
+             alt="Sepatu Traking" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Sepatu Traking</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp25.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/1a/98/d9/1a98d96b8e2f9dafacddde8d1ec22cbb.jpg" 
+             alt="Traking Poll" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Traking Poll</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp10.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/89/47/7d/89477dcee7728ae2d427a963e7d4ac13.jpg" 
+             alt="Carrier 60L" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Jaket Gunung</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp15.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/c2/7e/42/c27e425aa289f842af85c5f051a8260c.jpg" 
+             alt="Celana Gunung" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Celana Gunung</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp10.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/63/3e/e2/633ee2afc8cbd97e4a87ad7dab35a05c.jpg" 
+             alt="Topi Gunung" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Topi Gunung</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp10.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/b2/00/fe/b200fe71a3b954762d70f3ea73eb41fe.jpg" 
+             alt="Hydropack" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Hydropack</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp25.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/4d/08/15/4d0815067957cdeba6804390ae49a51f.jpg" 
+             alt="Headlamp" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Headlamp</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp5.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/2c/15/84/2c1584b58d1d764a47802e37777f8785.jpg" 
+             alt="Lampu Tenda" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Lampu Tenda</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp5.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/da/a4/56/daa45654a77c671d6278c58611673a22.jpg" 
+             alt="Sleeping Bag" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Sleeping Bag</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp15.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/09/7e/ba/097eba2a30b1b724a67dd3585d93984a.jpg" 
+             alt="Matras" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Matras</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp10.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/f0/25/1c/f0251cc5a401b5c6e28fc03c749018c0.jpg" 
+             alt="Kompor Portable" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Kompor Portable</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp10.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>    
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/1200x/4f/48/38/4f4838c70cfe0493e32b0f05aef42694.jpg" 
+             alt="Nesting" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Nesting</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp15.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>   
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/23/d3/fd/23d3fd71797c47d19e470d1d6bea1ffd.jpg" 
+             alt="Kursi & Meja Lipat" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Kursi & Meja Lipat</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp20.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>       
+
+    <div class="bg-black/35 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/5 flex flex-col justify-between">
+    <div>
+        <img src="https://i.pinimg.com/736x/20/69/0d/20690dd093157ed7a3786add6903ade5.jpg" 
+             alt="Powerbank" 
+             class="w-full h-40 sm:h-64 object-cover rounded-xl shadow">
+    <h3 class="mt-3 font-bold text-white text-base">Powerbank</h3>
+    </div>
+    <p class="mt-2 text-amber-400 font-black text-lg">Rp20.000 <span class="text-xs text-emerald-200 font-normal">/hari</span></p>
+</div>       
+
+    </section>
+
+    <!-- 7. TESTIMONI -->
+    <section id="testimoni" class="max-w-6xl mx-auto px-4 py-20 scroll-mt-16">
+        <h2 class="text-3xl sm:text-4xl font-black text-white text-center">Kata Mereka yang Sudah Muncak</h2>
+        <p class="mt-2 text-center text-emerald-200/80 text-sm sm:text-base">Pengalaman nyata dari teman-teman pendaki yang menyewa di Dann Adventure.</p>
+        
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-20">
+            <figure class="bg-black/35 backdrop-blur-md  rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-amber-400 text-lg tracking-widest">★★★★★</p>
+                    <blockquote class="mt-3 text-emerald-50 text-sm leading-relaxed">"Tendanya kering dan wangi, pas itu kena badai kabut di pos 7 Bawakaraeng aman tanpa ada rembes sama sekali."</blockquote>
+                </div>
+                <figcaption class="mt-6 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-full bg-amber-400 text-emerald-950 font-black flex items-center justify-center">A</span>
+                    <div class="text-xs">
+                        <span class="block font-bold text-white text-sm">Andi Fajar</span>
+                        <span class="text-emerald-200">Mahasiswa, Makassar</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="bg-black/35 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-amber-400 text-lg tracking-widest">★★★★★</p>
+                    <blockquote class="mt-3 text-emerald-50 text-sm leading-relaxed">"Pertama kali naik gunung dibimbing pilih alat yang pas dari nol. Paket pemulanya murah dan kondisinya bersih banget."</blockquote>
+                </div>
+                <figcaption class="mt-6 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-full bg-amber-400 text-emerald-950 font-black flex items-center justify-center">N</span>
+                    <div class="text-xs">
+                        <span class="block font-bold text-white text-sm">Nurul Hikmah</span>
+                        <span class="text-emerald-200">Pendaki Pemula, Gowa</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="bg-black/35 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <p class="text-amber-400 text-lg tracking-widest">★★★★★</p>
+                    <blockquote class="mt-3 text-emerald-50 text-sm leading-relaxed">"Rombongan 12 orang sangat terbantu karena alat diantar tepat waktu di titik kumpul. Admin responsif dan komunikatif."</blockquote>
+                </div>
+                <figcaption class="mt-6 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-full bg-amber-400 text-emerald-950 font-black flex items-center justify-center">R</span>
+                    <div class="text-xs">
+                        <span class="block font-bold text-white text-sm">Rizky Pratama</span>
+                        <span class="text-emerald-200">KPA Makassar</span>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- 8. FORM KONTAK & PEMESANAN -->
+    <section id="kontak" class="max-w-6xl mx-auto px-4 py-20 scroll-mt-16">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div class="lg:col-span-2">
+                <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Reservasi Cepat</span>
+                <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Pesan Alat Pendakianmu</h2>
+                <p class="mt-4 text-emerald-100/90 leading-relaxed">Isi formulir singkat ini, tim kami akan segera menghubungi via WhatsApp untuk konfirmasi ketersediaan stok & jadwal pengambilan.</p>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-center gap-3 text-emerald-100 font-medium">
+                        <span class="w-10 h-10 flex items-center justify-center"></span>
+                        <span>Kab. Gowa, Sulawesi Selatan</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-emerald-100 font-medium">
+                        <span class="w-10 h-10 flex items-center justify-center"></span>
+                        <span>+62 852-4293-1572 (WhatsApp)</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-emerald-100 font-medium">
+                        <span class="w-10 h-10 flex items-center justify-center"></span>
+                        <span>Buka Setiap Hari: 07.00 - 21.00 WITA</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <form class="lg:col-span-3 bg-black/40 backdrop-blur-md rounded-3xl p-7 sm:p-9 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div class="sm:col-span-2">
+                    <label for="nama" class="block text-sm font-semibold text-emerald-100 mb-1">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Contoh: Muhammad Syahdan" class="w-full bg-white/10 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all">
+                </div>
+                <div>
+                    <label for="telepon" class="block text-sm font-semibold text-emerald-100 mb-1">Nomor WhatsApp</label>
+                    <input type="tel" id="telepon" placeholder="08xxxxxxxxxx" class="w-full bg-white/10 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all">
+                </div>
+                <div>
+                    <label for="tanggal" class="block text-sm font-semibold text-emerald-100 mb-1">Tanggal Ambil</label>
+                    <input type="date" id="tanggal" class="w-full bg-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all">
+                </div>
+                <div>
+                    <label for="paket" class="block text-sm font-semibold text-emerald-100 mb-1">Pilihan Paket / Alat</label>
+                    <select id="paket" class="w-full bg-[#11271f] rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all">
+                        <option>Paket Pemula Lengkap</option>
+                        <option>Tenda Dome (2/4/6P)</option>
+                        <option>Carrier 60L</option>
+                        <option>Sleeping Bag &amp; Matras</option>
+                        <option>Kompor &amp; Nesting</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lama" class="block text-sm font-semibold text-emerald-100 mb-1">Durasi Sewa (Hari)</label>
+                    <input type="number" id="lama" min="1" value="2" class="w-full bg-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all">
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="catatan" class="block text-sm font-semibold text-emerald-100 mb-1">Catatan Tambahan (Opsional)</label>
+                    <textarea id="catatan" rows="3" placeholder="Rencana tujuan atau perlengkapan ekstra" class="w-full bg-white/10 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all"></textarea>
+                </div>
+                <div class="sm:col-span-2 flex items-center gap-2.5">
+                    <input type="checkbox" id="setuju" class="w-4 h-4 accent-amber-400 rounded">
+                    <label for="setuju" class="text-xs sm:text-sm text-emerald-200">Saya menyetujui syarat &amp; ketentuan sewa serta siap melampirkan identitas (KTP).</label>
+                </div>
+                <button type="button" class="sm:col-span-2 bg-amber-400 text-emerald-950 font-extrabold py-3.5 rounded-xl hover:bg-amber-300 active:scale-95 transition-all">Kirim Pesanan via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-black/50 backdrop-blur-md text-stone-300 py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <p class="text-xl font-black text-white"> Dann<span class="text-amber-400">Adventure</span></p>
+                <p class="mt-3 text-sm leading-relaxed text-emerald-100/80">Penyewaan perlengkapan pendakian dan perkemahan terpercaya di Kabupaten Gowa, Sulawesi Selatan.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-white mb-3">Informasi Kontak</h3>
+                <ul class="space-y-1.5 text-sm text-emerald-100/80">
+                    <li>Kab. Gowa, Sulawesi Selatan</li>
+                    <li>WhatsApp: +62 852-4293-1572</li>
+                    <li>Email: dannadventure123@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-white mb-3">Media Sosial</h3>
+                <ul class="flex gap-4 text-sm font-medium">
+                    <li><a href="#" class="hover:text-amber-400 transition-colors">Instagram</a></li>
+                    <li><a href="#" class="hover:text-amber-400 transition-colors">TikTok</a></li>
+                    <li><a href="#" class="hover:text-amber-400 transition-colors">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 text-center text-xs text-stone-400 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+            <p>&copy; 2026 Dann Adventure Outdoor. Hak cipta dilindungi.</p>
+            <a href="#" class="hover:text-amber-400 transition-colors">Kebijakan Privasi</a>
+            <a href="#" class="hover:text-amber-400 transition-colors">Syarat &amp; Ketentuan</a>
+        </div>
+    </footer>
+
+</body>
+</html>
