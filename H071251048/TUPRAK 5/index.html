@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manajemen Tugas Tim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 text-slate-800">
+  <header class="bg-indigo-700 text-white shadow">
+    <div class="mx-auto max-w-6xl px-4 py-6">
+      <h1 class="text-2xl font-bold sm:text-3xl">Manajemen Tugas Tim</h1>
+      <p class="mt-1 text-indigo-100">Pantau tugas anggota tim dalam satu halaman.</p>
+    </div>
+  </header>
+
+  <main class="mx-auto grid max-w-6xl gap-6 px-4 py-6 md:grid-cols-3">
+    <aside class="rounded-xl bg-white p-5 shadow-sm">
+      <h2 class="mb-4 text-lg font-bold">Daftar Anggota</h2>
+      <p id="statusAnggota" class="text-sm text-slate-500">Memuat anggota....</p>
+      <p id="errorAnggota" class="hidden mb-3 rounded-lg bg-red-50 p-3 text-sm text-red-700"></p>
+      <div id="daftarAnggota" class="flex flex-col gap-2"></div>
+    </aside>
+
+    <section class="rounded-xl bg-white p-5 shadow-sm md:col-span-2">
+      <div class="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+        <div>
+          <h2 id="judulTugas" class="text-xl font-bold">Pilih anggota tim</h2>
+          <p id="ringkasanProgres" class="mt-1 text-sm text-slate-500">Tugas akan ditampilkan di sini.</p>
+        </div>
+      </div>
+
+      <p id="statusTugas" class="mt-4 text-sm text-slate-500"></p>
+      <p id="errorTugas" class="hidden mt-3 rounded-lg bg-red-50 p-3 text-sm text-red-700"></p>
+
+      <div class="mt-5">
+        <label for="pencarian" class="mb-1 block text-sm font-medium">Cari tugas</label>
+        <input id="pencarian" type="search" placeholder="Ketik judul tugas..."
+          class="w-full rounded-lg border border-slate-300 px-3 py-2 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100">
+        <p id="pesanKosong" class="hidden mt-3 text-sm text-slate-500">Tidak ada tugas yang cocok.</p>
+      </div>
+
+      <ul id="daftarTugas" class="mt-4 space-y-3"></ul>
+
+      <div class="mt-7 border-t border-slate-200 pt-5">
+        <h3 class="text-lg font-bold">Tambah Tugas Baru</h3>
+        <p class="mt-1 text-sm text-slate-500">Judul minimal 5 karakter.</p>
+        <form id="formTugas" class="mt-3 flex flex-col gap-3 sm:flex-row">
+          <input id="judulBaru" type="text" placeholder="Masukkan judul tugas" autocomplete="off"
+            class="min-w-0 flex-1 rounded-lg border border-slate-300 px-3 py-2 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100">
+          <button id="tombolSimpan" type="submit"
+            class="rounded-lg bg-indigo-600 px-5 py-2 font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60">Simpan</button>
+        </form>
+        <p id="errorForm" class="hidden mt-3 rounded-lg bg-red-50 p-3 text-sm text-red-700"></p>
+        <p id="notifikasi" role="status" class="hidden mt-3 rounded-lg bg-green-50 p-3 text-sm text-green-700"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-5 text-center text-sm text-slate-500">
+    Tugas Praktikum BAB 5 · HTML, Tailwind CSS, dan JavaScript
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
