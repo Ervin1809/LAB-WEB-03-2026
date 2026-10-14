@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Papan Tugas Tim</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <main class="max-w-7xl mx-auto mt-10 mb-10 px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] bg-white border rounded-xl shadow-sm overflow-hidden">
+
+           
+            <!-- BAGIAN KIRI : DAFTAR ANGGOTA -->
+           
+            <section class="p-6 border-r">
+
+                <h1 class="text-xl font-bold mb-4">
+                    Tim Marsha
+                </h1>
+
+                <p class="text-gray-600 mb-2">
+                    Anggota
+                </p>
+
+                <!-- Status loading anggota -->
+                <p id="statusAnggota" class="text-gray-500">
+                    Memuat anggota...
+                </p>
+
+                <!-- Daftar anggota -->
+                <div id="daftarAnggota" class="space-y-2"></div>
+
+            </section>
+
+
+           
+            <!-- BAGIAN KANAN : DAFTAR TUGAS -->
+           
+            <section>
+
+                <!-- Header tugas -->
+                <div class="p-6 border-b">
+
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+                        <div>
+
+                            <h2 id="judulTugas" class="text-2xl font-bold">
+                                Tugas Anggota
+                            </h2>
+
+                            <p id="ringkasanTugas" class="text-gray-500 mt-1">
+                                Pilih anggota untuk melihat tugas.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Progress bar -->
+                        <div class="w-full md:w-64">
+
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+
+                                <div
+                                    id="progressBar"
+                                    class="bg-green-600 h-2 rounded-full transition-all duration-300"
+                                    style="width: 0%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                
+                <!-- SEARCH DAN TAMBAH TUGAS -->
+          
+                <div class="p-6 border-b">
+
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr_auto] gap-3 items-start">
+
+                        <!-- Search -->
+                        <input
+                            type="text"
+                            id="cariTugas"
+                            placeholder="Cari judul tugas"
+                            class="w-full p-3 border rounded-lg outline-none focus:border-blue-500">
+
+
+                        <!-- Input tugas baru -->
+                        <div>
+
+                            <input
+                                type="text"
+                                id="inputTugas"
+                                form="formTugas"
+                                placeholder="Masukkan tugas baru..."
+                                class="w-full p-3 border rounded-lg outline-none focus:border-blue-500">
+
+                            <!-- Pesan validasi -->
+                            <p id="pesanForm" class="text-sm mt-1 hidden"></p>
+
+                        </div>
+
+
+                        <!-- Form simpan -->
+                        <form id="formTugas">
+
+                            <button
+                                type="submit"
+                                id="tombolSimpan"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg disabled:opacity-50">
+
+                                Simpan
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                
+                <!-- STATUS DAN DAFTAR TUGAS -->
+                
+
+                <p
+                    id="statusTugas"
+                    class="px-6 pt-4 text-gray-500">
+                </p>
+
+
+                <div id="daftarTugas">
+                </div>
+
+
+                <!-- Pesan pencarian -->
+                <p
+                    id="pesanPencarian"
+                    class="p-6 text-gray-500 hidden">
+
+                    Tidak ada tugas yang cocok.
+
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Hubungkan HTML dengan JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
