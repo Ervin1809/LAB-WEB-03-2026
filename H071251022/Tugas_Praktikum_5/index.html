@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantau Tugas Tim</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-slate-100 text-slate-800">
+  <div class="mx-auto max-w-5xl px-4 py-8">
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold text-indigo-700">Pantau Tugas Tim</h1>
+      <p class="text-slate-500">Klik nama anggota untuk melihat tugas dan progresnya.</p>
+    </header>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- Daftar anggota -->
+      <section class="rounded-xl bg-white p-4 shadow md:col-span-1">
+        <h2 class="mb-3 text-lg font-semibold">Anggota</h2>
+        <div id="daftar-anggota" class="flex flex-col gap-2"></div>
+        <p id="status-anggota" class="text-sm text-slate-500"></p>
+      </section>
+
+      <!-- Daftar tugas -->
+
+        <section class="rounded-xl bg-white p-4 shadow md:col-span-2">
+        <h2 id="judul-tugas" class="text-lg font-semibold">Pilih anggota terlebih dahulu</h2>
+        <p id="progres" class="mb-3 text-sm font-medium text-indigo-600"></p>
+        <p id="status-tugas" class="mb-3 text-sm text-slate-500"></p>
+          <p id="error-form" class="mt-2 text-sm text-red-600"></p> 
+
+          
+            <!-- form tambah tugas -->
+        <form id="form-tugas" class="mt-5 border-t border-slate-200 pt-4" novalidate>
+              <label for="judul-baru" class="mb-1 block text-sm font-medium">Tambah tugas baru</label>
+              <div class="flex gap-2">
+                <input id="judul-baru" type="text" placeholder="Judul tugas (min. 5 karakter)"
+                  class="flex-1 rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                <button id="tombol-simpan" type="submit"
+                  class="rounded-lg bg-indigo-600 px-4 py-2 font-medium text-white hover:bg-indigo-700 disabled:opacity-60">Simpan</button>
+              </div>  
+                  <br>
+        </form>
+        
+        <!-- Kotak pencarian -->
+        <input id="cari" type="text" placeholder="Cari tugas berdasarkan judul..."
+          class="mb-3 w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+
+        <ul id="daftar-tugas" class="flex flex-col gap-2"></ul>
+        <p id="tidak-ada" class="hidden py-3 text-center text-slate-500"></p>
+
+
+
+        <!-- Form tambah tugas -->
+        
+      </section>
+    </div>
+  </div>
+
+  <!-- Notifikasi -->
+  <div id="notifikasi" class="hidden fixed bottom-4 right-4 rounded-lg bg-green-600 px-4 py-3 text-white shadow-lg"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
