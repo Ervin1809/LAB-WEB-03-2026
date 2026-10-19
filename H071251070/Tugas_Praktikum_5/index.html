@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8 font-sans">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-6 text-center">Team Task Manager</h1>
+
+        <div class="mb-8 border-b pb-6">
+            <h2 class="text-xl font-semibold mb-3">Daftar Anggota Tim</h2>
+            <p id="status-anggota" class="text-blue-500 italic">Memuat anggota...</p>
+            <div id="daftar-anggota" class="flex flex-wrap gap-2 mt-2"></div>
+        </div>
+
+        <div id="bagian-tugas" class="hidden">
+            <div class="flex justify-between items-center mb-4">
+                <h2 id="judul-tugas" class="text-xl font-semibold text-gray-800">Tugas Anggota</h2>
+                <p id="ringkasan-progres" class="text-sm font-medium text-gray-600"></p>
+            </div>
+
+            <p id="status-tugas" class="text-blue-500 italic mb-3"></p>
+
+            <form id="form-tambah-tugas" class="mb-6 p-4 bg-gray-50 rounded border border-gray-200">
+                <h3 class="text-md font-semibold mb-2 text-gray-700">Tambah Tugas Baru</h3>
+                <div class="flex gap-2 mb-2">
+                    <input type="text" id="input-tugas-baru" placeholder="Masukkan judul tugas baru..." class="flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+                    <button type="submit" id="tombol-simpan" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Simpan</button>
+                </div>
+                <p id="error-tambah" class="text-red-500 text-sm hidden mb-2"></p>
+                <p id="notifikasi-sukses" class="text-green-600 text-sm font-medium hidden">Tugas berhasil ditambahkan.</p>
+            </form>
+
+            <div class="mb-4">
+                <input type="text" id="input-cari" placeholder="Cari judul tugas..." class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+            </div>
+
+            <p id="pesan-kosong" class="text-gray-500 italic hidden text-center my-4">Tidak ada tugas yang cocok.</p>
+
+            <ul id="daftar-tugas" class="space-y-2"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
