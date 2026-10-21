@@ -1,0 +1,1 @@
+Simpan empat foto milik sendiri di folder ini dengan nama gallery-1.jpg, gallery-2.jpg, gallery-3.jpg, dan gallery-4.jpg. Foto ini diimpor langsung dari src/assets sesuai materi Bab 6.
