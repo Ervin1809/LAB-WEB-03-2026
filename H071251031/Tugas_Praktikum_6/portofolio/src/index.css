@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* ===== Custom Theme & Global Styles ===== */
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+
+  --color-primary: #0a0a0a;
+  --color-primary-light: #f5f5f0;
+  --color-accent: #c8a45e;
+  --color-accent-hover: #b8944e;
+  --color-muted: #6b7280;
+  --color-card-bg: #ffffff;
+  --color-card-border: #e5e5e5;
+  --color-section-dark: #0a0a0a;
+  --color-section-light: #f5f5f0;
+  --color-hero-text: #ffffff;
+  --color-pill-bg: #f3f4f6;
+  --color-pill-soft: #fef3c7;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accent dot used in logo */
+.accent {
+  color: var(--color-accent);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 3px;
+}
+
+/* ===== Native <dialog> modal styles ===== */
+dialog {
+  /* Remove browser default margin centering — we rely on dialog native centering */
+  margin: auto;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Subtle scale-in animation when dialog opens */
+dialog[open] {
+  animation: dialog-in 0.2s ease-out;
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
