@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #faf3e7;
+  --color-sand: #f0e4cf;
+  --color-ink: #2b211c;
+  --color-clay: #c4552f;
+  --color-clay-dark: #9f3f1e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream font-sans text-ink antialiased;
+}
+
+section[id] {
+  scroll-margin-top: 6.5rem;
+}
