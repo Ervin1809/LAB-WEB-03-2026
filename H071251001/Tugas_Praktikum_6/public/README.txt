@@ -1,0 +1,1 @@
+Simpan foto profil milik sendiri di folder ini dengan nama profile.jpg. Foto dipanggil langsung menggunakan path /profile.jpg sesuai materi Bab 6.
