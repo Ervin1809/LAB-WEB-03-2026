@@ -1,0 +1,19 @@
+
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: In ter, ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: #a3e635;
+  color: #0b1120;
+}
