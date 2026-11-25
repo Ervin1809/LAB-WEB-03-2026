@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Tugas Tim Marsha</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen p-4 md:p-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
+        
+        <!-- BAGIAN KIRI: Daftar Anggota -->
+        <aside class="w-full md:w-1/3 bg-white p-6 rounded-xl shadow-md h-fit">
+            <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-100 pb-2">Daftar Anggota</h2>
+            
+            <!-- Status loading & error untuk user -->
+            <p id="users-loading" class="text-blue-600 font-semibold italic animate-pulse">Memuat anggota...</p>
+            <p id="users-error" class="text-red-500 hidden font-medium"></p>
+            
+            <!-- Tempat daftar tombol anggota akan disisipkan -->
+            <div id="users-list" class="flex flex-col gap-2 mt-2"></div>
+        </aside>
+
+        <!-- BAGIAN KANAN: Detail Tugas (Sembunyi sebelum diklik) -->
+        <main id="tasks-container" class="w-full md:w-2/3 bg-white p-6 rounded-xl shadow-md hidden">
+            <h2 id="tasks-title" class="text-3xl font-extrabold mb-6 text-gray-800 border-b-2 border-gray-100 pb-3">Tugas</h2>
+            
+            <!-- F4: Form Tambah Tugas Baru -->
+            <form id="add-task-form" class="mb-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
+                <h3 class="font-bold text-blue-800 mb-2">Tambah Tugas Baru</h3>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <input type="text" id="new-task-input" class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ketik judul tugas...">
+                    <button type="submit" id="add-task-btn" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition w-full sm:w-auto">Simpan</button>
+                </div>
+                <!-- Pesan validasi form -->
+                <p id="add-task-error" class="text-red-500 text-sm mt-2 hidden font-medium"></p>
+                <p id="add-task-success" class="text-green-600 text-sm mt-2 hidden font-medium">Tugas berhasil ditambahkan.</p>
+            </form>
+
+            <!-- F3: Kotak Pencarian -->
+            <div class="mb-6">
+                <input type="text" id="search-input" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400" placeholder="Cari tugas berdasarkan judul...">
+            </div>
+
+            <!-- F2: Status & Ringkasan Tugas -->
+            <div class="flex justify-between items-center mb-4 bg-gray-50 p-3 rounded-lg">
+                <p id="tasks-summary" class="font-bold text-gray-700"></p>
+                <p id="tasks-loading" class="text-blue-600 italic font-semibold hidden animate-pulse">Memuat tugas...</p>
+            </div>
+            <p id="tasks-error" class="text-red-500 hidden font-medium mb-4"></p>
+            
+            <!-- Tempat daftar tugas akan disisipkan -->
+            <div id="tasks-list" class="flex flex-col gap-3"></div>
+            
+            <!-- Pesan jika pencarian tidak menemukan hasil -->
+            <p id="no-tasks-msg" class="text-gray-500 italic hidden mt-6 text-center font-medium bg-gray-50 py-4 rounded-lg">Tidak ada tugas yang cocok.</p>
+        </main>
+    </div>
+
+    <!-- Menghubungkan ke file Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
